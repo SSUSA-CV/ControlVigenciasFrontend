@@ -55,7 +55,7 @@ export const LoginPage = () => {
         <form className='form-div' onSubmit={handleSubmit}>
           <div className="form">
             <input className='input' id={error === 'Correo electrónico o contraseña incorrecto' ? 'errorCorreo' : ''} onChange={onChangeCorreo} type='email' placeholder='Correo electrónico' required />
-            <input className='input' id={error === 'Contraseña incorrecta' ? 'errorCorreo' : ''} onChange={onChangeContraseña} type='password' placeholder='Contraseña' required />
+            <input className='input' id={error === 'Contraseña incorrecta' ? 'errorCorreo' : ''} onChange={onChangeContraseña} type='password' minLength={8} placeholder='Contraseña' required />
           </div>
           <p className='question'>¿Aún no tienes una cuenta? <Link to="/register">Registrate aquí</Link></p>
 
