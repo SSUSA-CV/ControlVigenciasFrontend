@@ -88,10 +88,10 @@ export const EditarPerfilPage = () => {
 
             <div id="statusConfirmContraseña"></div>
             <label htmlFor="newcontraseña">Introduce una nueva contraseña</label>
-            <input onChange={e => setNewContraseña(e.target.value)} className='input-form' type="password" id='newcontraseña' required/>
+            <input onChange={e => setNewContraseña(e.target.value)} className='input-form' type="password" minLength={8} id='newcontraseña' required/>
 
             <label htmlFor="cnewcontraseña">Confirma tu nueva contraseña</label>
-            <input onChange={e => setConfirmContraseña(e.target.value)} className='input-form' type="password" id='cnewcontraseña' required/>
+            <input onChange={e => setConfirmContraseña(e.target.value)} className='input-form' type="password" minLength={8} id='cnewcontraseña' required/>
           </div>
         </div>
 
