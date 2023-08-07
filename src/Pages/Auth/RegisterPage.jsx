@@ -60,8 +60,8 @@ export const RegisterPage = () => {
           <div className="form">
             <input className='input' onChange={onChangeNombre} type='text' placeholder='Nombre' required />
             <input className='input' id={data === 'Ya existe este usuario' ? 'errorCorreo' : ''} onChange={onChangeCorreo} type='email' placeholder='Correo electrónico' required />
-            <input className='input' id={data === 'Las contraseñas no coinciden' ? 'errorContraseña1' : ''} onChange={onChangeContraseña} type='password' placeholder='Contraseña' required />
-            <input className='input' id={data === 'Las contraseñas no coinciden' ? 'errorContraseña2' : ''} onChange={onChangeRContraseña} type='password' placeholder='Confirmar contraseña' required />
+            <input className='input' id={data === 'Las contraseñas no coinciden' ? 'errorContraseña1' : ''} onChange={onChangeContraseña} type='password' minLength={8} placeholder='Contraseña' required />
+            <input className='input' id={data === 'Las contraseñas no coinciden' ? 'errorContraseña2' : ''} onChange={onChangeRContraseña} type='password' minLength={8} placeholder='Confirmar contraseña' required />
           </div>
           <p className='question'>¿Ya tienes una cuenta? <Link to="/login">Inicia sesión aquí</Link></p>
 
