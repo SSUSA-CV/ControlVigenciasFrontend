@@ -1,0 +1,104 @@
+.perfil-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section {
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding-right: 80px;
+    padding: 10px 100px 10px 10px;
+}
+
+.right-side {
+    border-left: 1px solid lightgray;
+    padding-left: 80px;
+    margin-left: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.perfil-ul {
+    list-style: none;
+    padding-left: 16px;
+    margin: 0;
+    font-size: 17px;
+    font-family: 'Nunito';
+    font-weight: 300;
+}
+
+.hr {
+    margin: 5px 0;
+}
+
+.left-side h1 {
+    font-size: 50px;
+}
+
+.fecha {
+    font-family: 'Nunito';
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.button {
+    border: 1px solid transparent;
+    padding: 0;
+}
+
+.logout {
+    background-image: linear-gradient(-45deg, rgb(180, 180, 180), lightgray, rgb(173, 173, 173));
+    border-radius: 5px;
+}
+
+.edit {
+    background-image: linear-gradient(-45deg, rgb(232, 211, 75), rgb(255, 243, 168), rgb(232, 211, 75));
+    border-radius: 5px;
+}
+
+.delete {
+    background-image: linear-gradient(-45deg, rgb(160, 26, 26), rgb(255, 72, 72), rgb(160, 26, 26));
+    border-radius: 5px;
+}
+
+.button-hover {
+    transition: all 300ms ease-in-out;
+    padding: 5px;
+    width: 100%;
+}
+
+.button-hover:hover {
+    background-color: rgb(0, 0, 0, 0.5);
+    border-radius: 5px;
+    color: whitesmoke;
+}
+
+.noradius {
+    border-radius: 0;
+}
+
+@media (max-width: 992px) {
+    .right-side {
+        padding: 0;
+        margin: 0;
+        margin-top: 20px;
+        border: none;
+    }
+    .section {
+        padding-right: 0;
+    }
+
+    .perfil-ul {
+        padding: 0;
+    }
+}
+
+@media (max-width: 390px) {
+    .right-side {
+        width: 100%;
+    }
+}

@@ -1,0 +1,51 @@
+.editar-container {
+    display: flex;
+    backdrop-filter: blur(5px);
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .editar-container {
+        flex-direction: column-reverse;
+    }
+}
+
+.formulario, .datos {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.formulario {
+    border-right: 1px solid lightgray;
+    padding-right: 20px;
+} 
+
+.datos {
+    padding-left: 21px;
+}
+
+.actualizar-btn {
+    border: 1px solid blue;
+    background-color: rgb(190, 190, 255);
+    padding: 5px 10px;
+    color: rgb(24, 0, 75);
+    margin-bottom: 20px;
+    transition: all 250ms;
+    width: 100px;
+}
+
+.actualizar-btn:hover {
+    background-color: rgb(173, 173, 233);
+    transform: translateX(10px);
+}
+
+.datos-ul {
+    font-family: 'Nunito';
+    list-style-type: circle;
+}
+
+.datos-span {
+    font-weight: 700;
+}

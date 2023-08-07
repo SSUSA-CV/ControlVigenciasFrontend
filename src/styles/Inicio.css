@@ -1,0 +1,34 @@
+.inicio-container {
+    display: flex;
+    gap: 40px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.links {
+    color: rgb(68, 68, 68);
+}
+
+.links-div {
+    background-color: white;
+    border: 1px solid lightgray;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 250ms;
+    cursor: pointer;
+}
+
+.links-div:hover {
+    transform: scale(1.1);
+    box-shadow: 0 2px 5px lightgray;
+}
+
+.logoPemex {
+    width: 200px;
+}
+
+.logoApicam {
+    width: 120px;
+}

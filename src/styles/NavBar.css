@@ -1,0 +1,53 @@
+.navbar-ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    gap: 30px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header {
+    padding: 10px 0;
+    background-image: linear-gradient(-45deg, rgb(59, 44, 224), rgb(145, 135, 254), rgb(114, 102, 242));
+    margin-bottom: 50px;
+}
+
+.nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-brand span {
+    font-family: 'Nunito';
+    font-weight: 400;
+    color: white;
+}
+
+.navbar-link {
+    border: 1px solid transparent;
+    padding: 0;
+    background: none;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    font-family: 'Nunito';
+    font-weight: 300;
+    transition: all 300ms;
+}
+
+.navbar-link:hover {
+    text-shadow: 0 0 3px white;
+}
+
+.active {
+    color: white;
+    border-bottom: 1px solid white;
+}

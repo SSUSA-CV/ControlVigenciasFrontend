@@ -1,0 +1,142 @@
+.titulo {
+    font-family: 'Nunito';
+    font-weight: 500;
+    font-size: 50px;
+    color: rgb(24, 24, 24);
+    margin-bottom: 20px;
+}
+
+.añadir {
+    border: 1px solid blue;
+    background-color: rgb(190, 190, 255);
+    padding: 5px 10px;
+    color: rgb(24, 0, 75);
+    margin-bottom: 20px;
+    transition: all 250ms;
+}
+
+.añadir:hover {
+    background-color: rgb(173, 173, 233);
+    transform: translateX(10px);
+}
+
+.container-main {
+    padding-bottom: 50px;
+}
+
+.opciones {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.div-buscar {
+    padding: 5px 10px;
+    padding-right: 15px;
+    background-color: white;
+    box-shadow: 0 0 3px lightgray;
+
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.input-buscar {
+    background: none;
+    border: none;
+    border-bottom: 1px solid transparent;
+    font-family: 'Nunito';
+    font-weight: 200;
+    color: gray;
+}
+
+.input-buscar:focus {
+    outline: none;
+    border-bottom: 1px solid lightgray;
+}
+
+.lupa {
+    color: gray;
+}
+
+.button-filtrar {
+    background: none;
+    border: none;
+    border-bottom: 1px solid gray;
+    font-family: 'Nunito';
+    font-weight: 200;
+}
+
+.li-filtrar {
+    padding: 0 10px;
+}
+
+.hr {
+    margin-top: 10px;
+}
+
+.form-filtrar {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.button-dos {
+    width: 100%;
+    background: none;
+    cursor: pointer;
+    border: none;
+    padding: 5px 0;
+}
+
+.button-dos:hover {
+    background-color: rgb(233, 233, 233);
+}
+
+.filtrar-submit {
+    border: 1px solid lightgray;
+    background-color: rgb(231, 231, 231);
+    transition: all 250ms;
+}
+
+.filtrar-submit:hover {
+    background-color: lightgray;
+}
+
+.filtrar-input {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    color: darkgray;
+    font-family: 'Nunito';
+    font-weight: 200;
+}
+
+.filtrar-input:focus {
+    outline: none;
+}
+
+.editar {
+    color: gray;
+    margin-right: 5px;
+    transition: all 250ms;
+}
+
+.borrar {
+    color: crimson;
+    transition: all 250ms;
+}
+
+.editar:hover, .borrar:hover {
+    transform: scale(1.2);
+}
+
+.accion {
+    border: none;
+    padding: 0;
+    margin: 0;
+    background: none;
+}
+
+.text-align-center {
+    text-align: center;
+}
